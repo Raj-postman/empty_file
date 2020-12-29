@@ -1,0 +1,520 @@
+{
+  "info": {
+    "_postman_id": "8be09d99-0194-48fc-9043-28c66f3a61be",
+    "name": "Dwights Collection",
+    "description": "This collection helps me schedule my time better dodging Jim's stupid pranks. I have mentioned Michael to take a look at this collection but he is still getting started with Powerpoint,scoffs!",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Diabolical Plan",
+      "item": [
+        {
+          "name": "Plans Failed",
+          "_postman_id": "fa65ad4d-afba-4d41-9bc9-f0cffba01a7f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/plan/fail",
+            "description": "These plans failed. Do not try them again."
+          },
+          "response": [
+            {
+              "id": "4f9a6f37-530e-4e87-9283-60013b624eff",
+              "name": "Fail",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url}}/plan/fail"
+              },
+              "status": "Not Acceptable",
+              "code": 406,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Malard\": \"This was a bait and planned for a failure\",\n    \"Comment\": \"Since I lose, can't take up this point\",\n    \"Results\": \"Jim -1, Dwight - 0\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Plans Succeeded",
+          "_postman_id": "eedb0e7d-cd23-4242-99a4-e80f522be9fc",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/plan/success",
+            "description": "My best plans are always the one that comes after I plan my own failure."
+          },
+          "response": [
+            {
+              "id": "28178444-c82d-4c8e-a175-f225f450b21e",
+              "name": "Success",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url}}/plan/success"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Microphone in Pen\": \"That's how its done\",\n    \"Comment\": \"Although David wallace backed up the loser. I succeeded in the voice capture\",\n    \"Results\": \"Jim - 1, Dwight - 1\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Suggest plan",
+          "_postman_id": "b3a13bfa-6ba7-4b71-a08a-1c764610df48",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"id\": \"001\",\n    \"Name\": \"Anonymous\",\n    \"Plan\" : \"Take him to Shrute farm and abandon\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url}}/plan/add",
+            "description": "Although Ryan has teamed up with him, I do not trust him. Neither do I believe you. Yet I give you a chance to share your idea into the next Feature plan Jims Downfall. Please share them with us. {+Mose}\n\nContact details:\nMose: +1{Call Dwight}\nWho gives him a phone?"
+          },
+          "response": [
+            {
+              "id": "d34ca9f2-0492-435b-8ee8-43decd2e27ba",
+              "name": "Suggest plan",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"id\": \"001\",\n    \"Name\": \"Anonymous\",\n    \"Plan\" : \"Take him to Shrute farm and abandon\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url}}/plan/add"
+              },
+              "status": "Accepted",
+              "code": 202,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Message\": {\n\n        Thank you for the thoughtful complaint!\n        Adding it to the box, Toby would send it to corporate soon.\n\n        Regards\n        Dwight Shrute\n        Assistant to the Regional manager\n    }\n}"
+            }
+          ]
+        }
+      ],
+      "_postman_id": "4fadd101-3a80-4170-82d3-c5e11f6653fa",
+      "description": "Take Jim Halpert Down.\n\nNotes: Ryan wants to join in. Can't refuse.\nEnemy of an Enemy is a friend.\n\nBesides that Jim is his own enemy. Wait.. Does that make him my friend? But he is my friend who is an enemy of my enemy which is Jim... Ah! Hmm.."
+    },
+    {
+      "name": "Complaints against Jim",
+      "item": [
+        {
+          "name": "List of Complaints",
+          "_postman_id": "1d527acd-3ccf-407f-abbe-bc456779c945",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/complaint/list",
+            "description": "Four years of malfeasance.\n\nUnfair methods are the first view. Jim keeps troubling and spending company time in rather useless things which mostly is pranking on me."
+          },
+          "response": [
+            {
+              "id": "763b2eb8-68dd-4702-979b-04df961d1e71",
+              "name": "Complaints",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url}}/complaint/list"
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"List\": \n    [\n        \"1. Replaced all of Dwight's pens and pencils with crayons\",\n        \"2. Jim paid everyone five dollars so they would call Dwight: Dwayne\",\n        \"3. Placed a bloody glove in Dwight's desk drawer and tried to convince him he committed murder\",\n        \"4. Told Dwight there was an abandoned infant in the women's bathroom, thus tricking him into going to the bathroom and seeing Meredith on the can\",\n        \"5. Dwight hit himself in the head with his phone (Jim kept putting nickels into the handset until Dwight got used to the weight; Jim then abruptly removed all of the nickels; Dwight went to pick up the phone, and believing the phone was heavy, pulled it very hard)\",\n        \"6. Every time Dwight typed his name it came out as Diapers\",\n        \"7. By the end of the day, Dwight's desk was moved two feet closer to the copier\"\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Transfer Jim",
+          "_postman_id": "7aed5b0c-d84f-444b-908a-3914c6bf9244",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/retrieve/branch_list",
+            "description": "Few branches I think Jim would be best placed, anything other than Scranton."
+          },
+          "response": [
+            {
+              "id": "470ba327-b75d-4248-b585-85d55fc620da",
+              "name": "Branch list",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url}}/retrieve/branch_list"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Active\": \n    [\n        \"Scranton\",\n        \"Akron\",\n        \"Albany\",\n        \"Nashua\",\n        \"New York (Corporate HQ)\"\n    ],\n    \"Inactive\":\n    [\n        \"Binghamton branch\",\n        \"Buffalo branch\",\n        \"Camden branch\",\n        \"Northeast branch\",\n        \"Pittsfield branch\",\n        \"Stamford branch\",\n        \"Yonkers branch\"\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Jobs for Jim",
+          "_postman_id": "911ec00c-5aa5-4d0a-877e-946893e7b786",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/retrieve/transfer",
+            "description": "Although I believe Jim is average and takes all of the credits due to his Height and Cuteness, these are list of jobs he would be best fit for. "
+          },
+          "response": [
+            {
+              "id": "e52856c8-87d1-4de5-b3b3-6eda4b3f6053",
+              "name": "Transfer",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url}}/retrieve/transfer"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Branch\": \"Stamford\",\n    \"Title\": \"Sales manager\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Place your complaint",
+          "_postman_id": "c9530dad-ba4b-47d2-924c-a1ad85652dd1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"id\": \"001\",\n    \"Name\": \"Anonymous\",\n    \"Complaint\" : \"xyyzz\",\n    \"Remedy\": \"Fire Jim\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url}}/complaint/add",
+            "description": "I'm pretty sure you all hate Jim.\nSo please file a complaint here, I'll transfer them to Toby."
+          },
+          "response": [
+            {
+              "id": "1e7f0625-23ab-4d29-b042-9afb09a2ceb9",
+              "name": "New Complaint",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"id\": \"001\",\n    \"Name\": \"Anonymous\",\n    \"Complaint\" : \"xyyzz\",\n    \"Remedy\": \"Fire Jim\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url}}/complaint/add"
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 22 Dec 2020 09:45:40 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Server",
+                  "value": "nginx"
+                },
+                {
+                  "key": "x-srv-trace",
+                  "value": "v=1;t=fd151c9df2e451f5"
+                },
+                {
+                  "key": "x-srv-span",
+                  "value": "v=1;s=d7a2c4e9c112524e"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "X-RateLimit-Limit",
+                  "value": "120"
+                },
+                {
+                  "key": "X-RateLimit-Remaining",
+                  "value": "119"
+                },
+                {
+                  "key": "X-RateLimit-Reset",
+                  "value": "1608630400"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"96-S/5iQ2y1qqIInh5BwoPc+chvDJU\""
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Message\": {\n\n        Thank you for placing your complaint!\n\n        Regards\n        Dwight Shrute\n        Assistant to the Regional manager\n    }\n}"
+            }
+          ]
+        }
+      ],
+      "_postman_id": "e9025de4-292a-4c18-9f38-fe0212595178",
+      "description": "These have to be filed and submitted to Toby Flenderson who then forwards it to corporate."
+    },
+    {
+      "name": "Office projects",
+      "item": [
+        {
+          "name": "Earth Day",
+          "item": [
+            {
+              "name": "Recyclops",
+              "_postman_id": "d20f6c65-9d7a-43cc-92df-a8f50907a315",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url}}/project/subject",
+                "description": "I take Earth Day very seriously and stand by companies Recycling program for Earth."
+              },
+              "response": [
+                {
+                  "id": "3021e833-4fdd-4c45-b369-b739e71a8753",
+                  "name": "Recyclops",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": "{{base_url}}/project/subject"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json",
+                      "description": "",
+                      "type": "text"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n    \"Data\": \"Recyclopes\",\n    \"Trivia\": \"It was all good until one day pollutricon attacked him\"\n    \"Image\":{\n                https://static.wikia.nocookie.net/theoffice/images/f/f0/Recyclops1.png/revision/latest/smart/width/298/height/223?cb=20200724135258\n    }\n}"
+                }
+              ]
+            }
+          ],
+          "_postman_id": "68add712-5c75-448b-b730-5f14108ded73",
+          "description": "I actively participated in the Office project and this is my idea. Safe mother Earth.",
+          "_postman_isSubFolder": true
+        },
+        {
+          "name": "World of Karate - Seminar",
+          "_postman_id": "16ba3636-7798-4119-94f3-6f9251eed92e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-mock-match-request-body",
+                "value": "true",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"Level\": \"Pro\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url}}/project/martialArt",
+            "description": "Special training."
+          },
+          "response": [
+            {
+              "id": "882ae525-950c-4d9f-908b-c13611f9ed17",
+              "name": "Master Fight",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": "{{base_url}}/project/martialArt"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    Dwight: I am attacking myself with a throat punch. Here it comes.\n        Dwight: Block. Grasp wrist as such. \n    Dwight: Second throat punch.\n        Dwight: Absorb the blow.\n    Dwight: Groin punch.\n        Dwight: Hip block!\n    Dwight: Elbow to the gut!\n        Dwight: Oh oh! Up to the nose!\n    Dwight: NO, you're not!\n        Dwight: Ahhhh!\n    Dwight: He's making me look like such a fool. He really is. But not for long.\n        Dwight: Oh God! \n    Dwight: Instep! \n        Dwight: Ah ah ah ah! Oh, not again! Groin punch!\n    Dwight: Hip block! You let go! \n        Dwight: No, you let go!\n    Dwight: Oh, okay, you're right, hold on! \n        Dwight: The important thing to remember, we always have what is called...the element of surprise. Surprise groin punch.\n    Dwight: Ohhhhhhhh, ohhhhhh!\n}"
+            },
+            {
+              "id": "a4006897-a129-4993-95fa-36bb0ad16aa8",
+              "name": "General",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "x-mock-match-request-body",
+                    "value": "true",
+                    "type": "text"
+                  }
+                ],
+                "url": "{{base_url}}/project/martialArt"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Awareness\": \"Advancements in the world of Martial arts\"\n}"
+            }
+          ]
+        }
+      ],
+      "_postman_id": "5aa040e9-6f1e-4d0e-b3b4-e1503d344834",
+      "description": "Numerous number of projects I enrolled or initiate apart from selling papers."
+    }
+  ]
+}
