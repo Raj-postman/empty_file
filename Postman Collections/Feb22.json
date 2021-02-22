@@ -1,0 +1,89 @@
+{
+  "info": {
+    "_postman_id": "b72247a4-310f-4707-8367-8dcb12a556d5",
+    "name": "NewTest",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "gupt/vijushah",
+      "_postman_id": "bfddb758-9200-430e-a979-9976b0488e20",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "{{url}}/gupt/vijushah"
+      },
+      "response": [
+        {
+          "id": "b7d9d1bb-e961-410b-bfa0-1875c4576dca",
+          "name": "Default",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "{{url}}/gupt/vijushah"
+          },
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "responseTime": null,
+          "body": "music"
+        }
+      ]
+    },
+    {
+      "name": "https://www.newtest.com/url",
+      "_postman_id": "d2772574-5eca-4f68-9777-80bf209f80ab",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "{{url}}/www.newtest.com/url"
+      },
+      "response": [
+        {
+          "id": "e93e7d59-920f-4a3b-bcc7-6ddae12cf6e1",
+          "name": "Default",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "{{url}}/www.newtest.com/url"
+          },
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "responseTime": null,
+          "body": "datafile"
+        }
+      ]
+    }
+  ]
+}
